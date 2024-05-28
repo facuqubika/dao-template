@@ -28,4 +28,4 @@ export const ADDRESS_ZERO = "0x0000000000000000000000000000000000000000"
 
 export const NEW_STORE_VALUE = 77
 export const FUNC = "store"
-export const PROPOSAL_DESCRIPTION = "Proposal #1 77 in the Box!"
+export const PROPOSAL_DESCRIPTION = "Propuesta #1 Agrandar la cancha para que tenga 77 millones de lugares!"
