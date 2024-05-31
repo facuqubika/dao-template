@@ -18,7 +18,7 @@ export async function propose(args: any[], functionToCall: string, proposalDescr
   console.log(`Proposal Description:\n  ${proposalDescription}`)
   const proposeTx = await governor.propose(
     [box.address],
-    [0],
+    [0], // how much eth we are going to send
     [encodedFunctionCall],
     proposalDescription
   )
@@ -40,9 +40,9 @@ export async function propose(args: any[], functionToCall: string, proposalDescr
   // 0:Pending, 1:Active, 2:Canceled, 3:Defeated, 4:Succeeded, 5:Queued, 6:Expired, 7:Executed
   console.log(`Current Proposal State: ${proposalState}`)
   // What block # the proposal was snapshot
-  console.log(`Current Proposal Snapshot: ${proposalSnapShot}`)
+  console.log(`Snapshot con capacidad actual del estadio: ${proposalSnapShot}`)
   // The block number the proposal voting expires
-  console.log(`Current Proposal Deadline: ${proposalDeadline}`)
+  console.log(`Numero de bloque del proposal cuando expira: ${proposalDeadline}`)
 }
 
 function storeProposalId(proposalId: any) {

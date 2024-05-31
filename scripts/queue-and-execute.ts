@@ -36,7 +36,7 @@ export async function queueAndExecute() {
     descriptionHash
   )
   await executeTx.wait(1)
-  console.log(`Box value: ${await box.retrieve()}`)
+  console.log(`Nueva capacidad del estadio: ${await box.retrieve()} millones`)
 }
 
 queueAndExecute()
